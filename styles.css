@@ -1,0 +1,272 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&display=swap');
+
+:root {
+  --white: #ebe9e0;
+  --primary: #4b613b;
+  --secondary: #ffd036;;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--primary);
+  font-family: "DM Sans", sans-serif;
+}
+
+#main {
+  background-image: url("./img1/mike-kenneally-TD4DBagg2wE-unsplashのコピー.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 65vh;
+}
+
+.container {
+  margin: auto;
+  max-width: 1200px;
+  padding: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  margin: 85px auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 28px;
+}
+
+.navigation-list a {
+  color: var(--white);
+}
+
+.btn {
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background: transparent;
+}
+
+.btn-one {
+  border: none;
+  background: var(--secondary);
+  color: var(--primary);
+}
+
+.btn-two {
+  font-weight: bold;
+  border: 2px solid;
+  color: var(--white);
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+  align-items: center;
+  margin-top: 85px;
+}
+
+.main-content .main-heading {
+  margin-top: -20px;
+  font-size: 115px;
+}
+
+.main-content .sub-heading {
+  font-size: 50px;
+}
+
+.main-content p {
+  max-width: 260px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.hamburger-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  display: none;
+}
+
+#history .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 110px;
+}
+
+#history .container .history-content {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+}
+
+#history .container .history-content h1 {
+  font-family: sans-serif, "Forum";
+  font-size: 32px;
+}
+
+#response {
+  background: #feefc6;
+}
+
+#response h1 {
+  text-align: center;
+  font-size: 26px;
+  font-family: "Forum", sans-serif;
+}
+
+#response .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  gap: 25px;
+  padding: 55px 15px;
+  max-width: 600px;
+}
+
+#response .person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.section-title .thickLine {
+  
+  border: 10px;
+  width: 160px;
+  height: 4px;
+  background: var(--secondary);
+  margin: auto;
+}
+
+.details {
+  
+  display: flex;
+  justify-content: center;
+  gap: 17px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.detail {
+  width: 350px;
+}
+
+.detail img {
+  max-width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.detail img:hover {
+  transform: scale(1.03);
+}
+
+#contact {
+  
+  background-image: url("./img1/ferdinand-stohr-iW1WzbuWMcA-unsplash.jpg");
+  background-position: bottom center;
+  background-size: cover;
+  min-height: 500px;
+}
+
+#contact h1 {
+  font-size: 55px;
+}
+
+#contact .container {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  gap: 18px;
+}
+
+footer {
+  margin-top: -60px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 16px;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  list-style: none;
+}
+
+@media screen and (max-width: 520px) {
+  
+  .navigation-list.on {
+    right: 0;
+  }
+
+.navigation-list {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    background: rgb(121, 113, 80);
+    height: 50vh;
+    padding-top: 70px;
+    transition: all 0.3s ease;
+    right: -800px;
+    width: 80%;
+  }
+  
+  .navigation-list li:not(:last-child) {
+    border-bottom: 1px solid var(--white);
+    text-align: left;
+    width: 100%;
+    padding: 10px 35px;
+  }
+
+  .hamburger-btn {
+    display: block;
+  }
+  
+  #history .container {
+    flex-direction: column;
+    gap: 28px;
+  }
+  footer .container {
+    flex-direction: column;
+    gap: 24px;
+  }
+}

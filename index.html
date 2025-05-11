@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div class="container">
+        <nav>
+          <img src="./img1/—Pngtree—simple coffee shop logo_16099189のコピー.png" alt="" class="logoMark" />
+          <ul class="navigation-list">
+            <li><a href="#">ホーム</a></li>
+            <li><a href="#">サービス</a></li>
+            <li><a href="#">詳細</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+            <li><button class="btn btn-two">0120-0000-0000</button></li>
+          </ul>
+          
+          <img src="./img1/menu-svgrepo-com.svg" alt="" class="hamburger-btn" />
+        </nav>
+
+        <div class="main-content">
+          <h1 class="sub-heading">Birmingham</h1>
+          <h1 class="main-heading">Coffee</h1>
+          <p>
+            質の高いリッチなコーヒーをあなたに届ける
+          </p>
+          <button class="btn btn-one">メニュー</button>
+        </div>
+      </div>
+    </div>
+
+    <section id="history">
+      <div class="container">
+        <div class="history-content">
+          <h4>About Birmingham Cafe</h4>
+          <h1>
+            １８９０年にイギリスで生まれた歴史のあるカフェ
+          </h1>
+          <p>
+            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          </p>
+          <button class="btn btn-one">カフェの歴史</button>
+        </div>
+
+        <div class="history-image">
+          <img src="./img1/nathan-dumlao-zUNs99PGDg0-unsplash.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section id="response">
+      <div class="container">
+        <h1>
+          “一杯のコーヒーに、私たちは手間と時間を惜しみません。豆の個性を活かす抽出方法、温度、空間──そのすべてが、あなたの一日の中に小さな贅沢を届けるためにあります。心地よい木のぬくもりに包まれて、深呼吸するようなコーヒー時間をお楽しみください。”
+        </h1>
+        <div class="person">
+          <img src="./img1/alexander-hipp-iEEBWgY_6lA-unsplash.jpg" alt="" />
+          <h5>Alexander Mcqueen</h5>
+        </div>
+      </div>
+    </section>
+
+    <section id="details">
+      <div class="container">
+        <div class="section-title">
+          <h1>Rich Coffee</h1>
+          <div class="thickLine"></div>
+        </div>
+        <div class="details">
+          <div class="detail">
+            <img src="./img1/afrah-0x-_TV1zQFU-unsplash.jpg" alt="" />
+            <h3>厳選された質の高い豆</h3>
+            <p>
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            </p>
+          </div>
+          <div class="detail">
+            <img src="./img1/phil-hearing-MMvfm5ZCUrQ-unsplash.jpg" alt="" />
+            <h3>豆本来の味わいを楽しめる抽出方法</h3>
+            <p>
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            </p>
+          </div>
+          <div class="detail">
+            <img src="./img1/lee-campbell-31QfYo1h32o-unsplash.jpg" alt="" />
+            <h3>プロフェッショナルのブレント技術</h3>
+            <p>
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h1>Contact</h1>
+        <p>
+          サービスについてのご質問があればお答えいたします
+        </p>
+        <button class="btn btn-one">お問い合わせ</button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <ul class="footer-links">
+          <li><a href="#">ホーム</a></li>
+          <li><a href="#">サービス</a></li>
+          <li><a href="#">詳細</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+        <img src="./img1/—Pngtree—simple coffee shop logo_16099189のコピー.png" alt="" class="footer-Logo" />
+        <p>Birmingham Cafe</p>
+      </div>
+    </footer>
+
+    <script>
+      const navBtn = document.querySelector('.hamburger-btn');
+      const navList = document.querySelector('.navigation-list');
+      navBtn.addEventListener("click", function () {
+        navList.classList.toggle("on");
+      });
+    </script>
+  </body>
+</html>
